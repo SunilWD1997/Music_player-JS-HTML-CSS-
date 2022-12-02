@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPlayer</title>
+
+    <!-------------- fav_icon link -------------------->
+    <link rel="apple-touch-icon" sizes="180x180" href="fav_icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav_icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav_icon/favicon-16x16.png">
+    <link rel="manifest" href="fav_icon/site.webmanifest">
+    <link rel="mask-icon" href="fav_icon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!------------- font awesome cdn link --------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!---------------- css style sheet link ---------------->
+    <link rel="stylesheet" href="/scss/style.css">
+</head>
+
+<body>
+
+    <div class="main_container">
+        <div class="music_content">
+            <h1 id="tittle">Music Tittle</h1>
+            <h1 id="author">Author</h1>
+            <div class="image_container">
+                <img src="/images/image1.jpeg" alt="remote" id="imgs">
+                <div class="circle"></div>
+            </div>
+            <audio id="audio_control" src="/audio/song1.mp3"></audio>
+            <div class="music_buttons">
+                <i class="fa-solid fa-backward" id="backward"></i>
+                <i class="fa-sharp fa-solid fa-circle-play" id="play"></i>
+                <i class="fa-solid fa-forward" id="forward"></i>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!---------------------- javaScript link ---------------------->
+    <script src="/JS/index.js"></script>
+</body>
+
+</html>

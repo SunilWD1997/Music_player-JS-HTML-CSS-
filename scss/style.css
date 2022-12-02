@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 0.15rem 0.15rem 0.1rem #71da1b;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main_container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #badbd8cf;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.music_content {
+  width: 23rem;
+  background-color: #fff;
+  border-radius: .7rem;
+  -webkit-box-shadow: 1rem 1rem 1rem grey;
+          box-shadow: 1rem 1rem 1rem grey;
+  padding: 2.3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.music_content #tittle {
+  font-size: 2.2rem;
+  margin-bottom: .5rem;
+}
+
+.music_content #author {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.image_container {
+  width: 15rem;
+  height: 15rem;
+  position: relative;
+}
+
+.image_container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  -webkit-box-shadow: .7rem  grey;
+          box-shadow: .7rem  grey;
+  border: .4rem solid grey;
+}
+
+.image_container .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 50%;
+  border: .4rem solid grey;
+}
+
+.music_buttons {
+  margin-top: 3rem;
+  width: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.music_buttons .fa-forward,
+.fa-backward {
+  font-size: 1.8rem;
+}
+
+.music_buttons .fa-forward:hover,
+.fa-backward:hover {
+  color: #4e4c4c;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.music_buttons .fa-forward:active,
+.fa-backward:active {
+  color: #f80404;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.music_buttons .fa-sharp {
+  font-size: 3rem;
+}
+
+.music_buttons .fa-sharp:hover {
+  color: #4e4c4c;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.music_buttons .fa-sharp:active {
+  color: #f80404;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.circular_move {
+  -webkit-animation: circular 4s linear  infinite forwards;
+          animation: circular 4s linear  infinite forwards;
+}
+
+@-webkit-keyframes circular {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes circular {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
